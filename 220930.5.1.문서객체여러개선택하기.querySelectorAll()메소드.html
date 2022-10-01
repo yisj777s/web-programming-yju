@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM Basic</title>
+    <script type="text/javascript">
+      window.onload=function(){
+        var headers=document.querySelectorAll('h1');
+        for(var i=0;i<headers.length;i++){
+          var header=headers[i];
+          header.style.color='green';
+          header.style.background='blue';
+          header.innerHTML='From JavaScript';
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <h2>h2</h2>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+  </body>
+</html>
