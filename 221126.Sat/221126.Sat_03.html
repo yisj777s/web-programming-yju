@@ -19,11 +19,13 @@
             }
         
             myCar = new Car("520d",60,"red");
-            document.write("모델: "+myCar.model+" 속도: "+myCar.speed+"<br>");
+            document.write("모델: "+myCar.model+" 속도: "+myCar.speed+" 색: "+myCar.color+"<br>");
             myCar.accel();;
-            document.write("모델: "+myCar.model+" 속도: "+myCar.speed+"<br>");
+            myCar.color = "white";
+            document.write("모델: "+myCar.model+" 속도: "+myCar.speed+" 색: "+myCar.color+"<br>");
             myCar.brake();
-            document.write("모델: "+myCar.model+" 속도: "+myCar.speed+"<br>");
+            myCar.color = "yellow";
+            document.write("모델: "+myCar.model+" 속도: "+myCar.speed+" 색: "+myCar.color+"<br>");
         </script>
     </body>
     </html>
